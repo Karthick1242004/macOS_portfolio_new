@@ -1,0 +1,55 @@
+
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build the Website
+      run: npm run build
+
+    - name: Install Netlify CLI
+      run: npm install -g netlify-cli
+
+    - name: Get Stored Domain
+      id: get-domain
+      run: |
+        # Replace the URL with the testing endpoint to fetch a subdomain
+        DOMAIN=$(curl -s https://folio4ubackend-production.up.railway.app/get-subdomain | jq -r ".subdomain")
+        if [ -z "$DOMAIN" ]; then
+          echo "Error: No domain provided by the API"
+          exit 1
+        fi
+        echo "Fetched DOMAIN: $DOMAIN"
+        echo "DOMAIN=$DOMAIN" >> $GITHUB_ENV
+
+    - name: Deploy to Netlify
+      run: |
+        echo "Creating and deploying site: $DOMAIN"
+        # Create a new Netlify site
+        netlify sites:create --name "$DOMAIN" --account-slug calibertech875 --json > site.json
+        SITE_ID=$(cat site.json | jq -r '.id')
+        echo "Created site with ID: $SITE_ID"
+
+        # Deploy the site to Netlify
+        netlify deploy --prod --dir=./dist --site="$SITE_ID" --auth="nfp_vz5TPB3KPcZokUTHYkh6j2FVRZZrSjzfc495"
+
+      env:
+        NETLIFY_AUTH_TOKEN: nfp_vz5TPB3KPcZokUTHYkh6j2FVRZZrSjzfc495

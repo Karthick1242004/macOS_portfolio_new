@@ -1,0 +1,139 @@
+.notes .markdown a {
+  @apply text-gray-500;
+  @apply underline;
+}
+
+.notes .markdown h1,
+.notes .markdown h2,
+.notes .markdown h3,
+.notes .markdown h4 {
+  @apply font-bold relative c-text-800;
+}
+
+.notes .markdown h1,
+.notes .markdown h2,
+.notes .markdown h3,
+.notes .markdown h4 {
+  @apply mt-7;
+}
+
+.notes .markdown h1::before,
+.notes .markdown h2::before,
+.notes .markdown h3::before,
+.notes .markdown h4::before {
+  @apply absolute text-sm c-text-400 -left-7 bottom-1;
+}
+
+.notes .markdown h1 {
+  @apply text-3xl;
+}
+
+.notes .markdown h2 {
+  @apply text-2xl;
+}
+
+.notes .markdown h3 {
+  @apply text-xl;
+}
+
+.notes .markdown h3 {
+  @apply text-xl;
+}
+
+.notes .markdown h4 {
+  @apply text-lg;
+}
+
+.notes .markdown p {
+  @apply mt-6;
+}
+
+.notes .markdown h2 + p,
+.notes .markdown h3 + p,
+.notes .markdown h4 + p {
+  @apply mt-4;
+}
+
+.notes .markdown ul,
+.notes .markdown ol {
+  @apply mt-2 pl-3;
+}
+
+.notes .markdown ul > li::before {
+  content: "-";
+  @apply mr-2;
+}
+
+.notes .markdown ul > li::marker {
+  @apply text-gray-500 dark:text-gray-400;
+}
+
+.notes .markdown ol {
+  @apply list-decimal;
+}
+
+.notes .markdown li p {
+  @apply m-0 mb-2;
+}
+
+.notes .markdown code {
+  @apply text-sm border c-border-300 rounded py-0.5 px-1 c-bg-50;
+}
+
+.notes .markdown pre {
+  @apply mt-2 text-sm;
+}
+
+.notes .markdown pre code {
+  @apply text-sm bg-transparent border-none p-0;
+}
+
+.notes .markdown pre div {
+  @apply border c-border-300 rounded;
+}
+
+.notes .markdown .token {
+	background: transparent !important;
+}
+
+.notes .markdown img {
+  @apply inline-block;
+}
+
+.notes .markdown table {
+  @apply mt-4 block w-full overflow-auto;
+}
+
+.notes .markdown table td,
+.notes .markdown table th {
+  @apply px-3 py-2 border c-border-300;
+}
+
+.notes .markdown table tr {
+  @apply border-t border-gray-300 bg-transparent;
+}
+
+.dark .notes .markdown,
+.dark .notes .midbar {
+  @apply bg-gray-800;
+}
+
+.dark .notes .midbar li.bg-white {
+  @apply bg-gray-900;
+}
+
+.notes .sidebar {
+  @apply bg-gray-200 text-black bg-opacity-90 text-sm;
+}
+
+.dark .notes .sidebar {
+  @apply bg-gray-700 text-white bg-opacity-80 text-sm;
+}
+
+.notes .tooltip {
+  @apply invisible absolute;
+}
+
+.notes .has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}

@@ -1,0 +1,150 @@
+{
+  "name": "Karthick124",
+  "avatar": "img/ui/my_profile.jpg",
+  "websites": {
+    "favorites": {
+      "title": "Favourites",
+      "sites": [
+        {
+          "id": "my-github",
+          "title": "Github",
+          "img": "img/sites/github.svg",
+          "link": "https://github.com/Karthick1242004"
+        },
+        {
+          "id": "my-linkedin",
+          "title": "Linkedin",
+          "img": "img/sites/linkedin.svg",
+          "link": "https://www.linkedin.com/in/karthickrajan-s/"
+        },
+        {
+          "id": "my-email",
+          "title": "Email",
+          "img": "img/sites/gmail.svg",
+          "link": "mailto:karthick1242004@gmail.com"
+        },
+        {
+          "id": "Portfolio",
+          "title": "Portfolio",
+          "img": "img/icons/launchpad/caliber_logo_main.png",
+          "link": "https://karthickrajans.vercel.app/"
+        }
+      ]
+    },
+    "freq": {
+      "title": "Frequently Visited",
+      "sites": [
+        {
+          "id": "duolingo",
+          "title": "Duolingo",
+          "img": "img/sites/duolingo.svg",
+          "link": "https://preview.duolingo.com/learn"
+        },
+        {
+          "id": "github",
+          "title": "Github",
+          "img": "img/sites/github.svg",
+          "link": "https://github.com/Karthick1242004"
+        },
+        {
+          "id": "pinterest",
+          "title": "Pinterest",
+          "img": "img/sites/pinterest.svg",
+          "link": "https://www.pinterest.com/"
+        },
+        {
+          "id": "hackernews",
+          "title": "HN",
+          "img": "img/sites/hacker.svg",
+          "link": "https://news.ycombinator.com/"
+        },
+        {
+          "id": "notion",
+          "title": "Notion",
+          "img": "img/sites/notion.svg",
+          "link": "https://notion.so"
+        },
+        {
+          "id": "adventofcode",
+          "title": "AOC",
+          "img": "img/sites/adventofcode.svg",
+          "link": "https://adventofcode.com/"
+        },
+        {
+          "id": "lichess",
+          "title": "lichess",
+          "img": "img/sites/lichess.svg",
+          "link": "https://lichess.org/"
+        },
+        {
+          "id": "leetcode",
+          "title": "LeetCode",
+          "img": "img/sites/leetcode.svg",
+          "link": "https://leetcode.com/"
+        }
+      ]
+    }
+  },
+  "about": {
+    "name": "Karthickrajan S",
+    "bio": [
+      "I am Karthickrajan studying at KEC",
+      "I work as a software developer intern at The Cloud Company.",
+      "I like developing complex UIs. Love to write code and learning new features."
+    ],
+    "education": "Before that, I was doing my bachelor's degree in Computer Science Engineering at KEC in India.",
+    "interests": "Machine Learning / Computer Vision / Robotics / Web Development / Mobile Development / UI/UX Design",
+    "hobbies": "Cricket, Gaming, digital art, learning new frameworks",
+    "contact": {
+      "email": "karthick1242004@gmail.com",
+      "github": "https://github.com/Karthick1242004",
+      "linkedin": "https://www.linkedin.com/in/karthickrajan-s/"
+    }
+  },
+  "notes": [
+    {
+      "id": "profile",
+      "title": "Profile",
+      "icon": "BsFolder2",
+      "md": [
+        {
+          "id": "about-me",
+          "title": "About Me",
+          "file": "markdown/about-me.md",
+          "icon": "Emoji(label='waving', symbol='👋')",
+          "excerpt": "Hi! This is Karthick, now a Software Developer at..."
+        },
+        {
+          "id": "github-stats",
+          "title": "Github Stats",
+          "file": "markdown/github-stats.md",
+          "icon": "Emoji(label='coding', symbol='👩🏻‍💻')",
+          "excerpt": "Here are some status about my github account..."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Projects",
+      "icon": "BsFolder2",
+      "md": [
+        {
+          "id": "3D Robo Website",
+          "title": "3D Robo Website",
+          "file": "markdown/about-me.md",
+          "icon": "Emoji(label='hand', symbol='✋')",
+          "excerpt": "A 3D model robo with mouse interactions",
+          "link": "https://caliber-3d.vercel.app/"
+        },
+        {
+          "id": "3D Portfolio",
+          "title": "3D Portfolio",
+          "file": "markdown/about-me.md",
+          "icon": "Emoji(label='butterfly', symbol='🦋')",
+          "excerpt": "A gamified portfolio, play to know about me",
+          "link": "https://www.linkedin.com/posts/karthickrajan-s_webdevelopment-threejs-blenderart-activity-7157677820071084032-hqvw/?utm_source=share&utm_medium=member_desktop"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Steps to Install
+
+To set up the project, run the following commands:
+
+npm install --legacy-peer-deps
+npm install --force
+npm list react react-dom
+npm install react@18 react-dom@18
+
+
+React version may give error while deploying, so better run 
+npm run build 
+then upload the dist folder in the hosting service.
