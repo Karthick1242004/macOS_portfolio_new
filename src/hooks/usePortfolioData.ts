@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { useState, useEffect } from 'react';
 
-const DATA_URL = 'https://gist.githubusercontent.com/Karthick1242004/d62e7e6fd0503badf9324ee880203ebb/raw/gistfile1.txt';
+const DATA_URL = 'https://gist.githubusercontent.com/Karthick1242004/90da90ededd9e735556438bcea51ee1f/raw/data.json';
 
 interface PortfolioData {
   name: string;
