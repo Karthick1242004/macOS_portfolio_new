@@ -42,13 +42,9 @@ jobs:
     - name: Deploy to Netlify
       run: |
         echo "Creating and deploying site: $DOMAIN"
-        # Create a new Netlify site
-        netlify sites:create --name "$DOMAIN" --account-slug calibertech875 --json > site.json
-        SITE_ID=$(cat site.json | jq -r '.id')
+        SITE_ID=$(netlify sites:create --name "$DOMAIN" --account-slug calibertech875 | grep -o "Site ID:  [a-zA-Z0-9-]*" | awk '{print $3}')
         echo "Created site with ID: $SITE_ID"
-
-        # Deploy the site to Netlify
-        netlify deploy --prod --dir=./dist --site="$SITE_ID" --auth="nfp_vz5TPB3KPcZokUTHYkh6j2FVRZZrSjzfc495"
-
+        netlify deploy --prod --dir=./dist --site="$SITE_ID" --auth="nfp_dmTjWcyc3W7KWMWepKDSnN2efxHq9kufe2f6"
+        
       env:
-        NETLIFY_AUTH_TOKEN: nfp_vz5TPB3KPcZokUTHYkh6j2FVRZZrSjzfc495
+        NETLIFY_AUTH_TOKEN: nfp_dmTjWcyc3W7KWMWepKDSnN2efxHq9kufe2f6
