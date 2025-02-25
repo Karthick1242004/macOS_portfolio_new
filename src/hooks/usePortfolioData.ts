@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { useState, useEffect } from 'react';
 
-const DATA_URL = 'https://gist.githubusercontent.com/Caliber875/b5750e905a08adf1f259d45809ad624d/raw/f1e7430c7e441535eb68afff964c23dfafc7fac0/data.json';
+const DATA_URL = 'https://gist.githubusercontent.com/Karthick1242004/8f7e961633385bbba6b32dd5a00fbc54/raw/79a927f08fad238c21df8df40bd82bfce82654f5/data.json';
 
 interface PortfolioData {
   name: string;
